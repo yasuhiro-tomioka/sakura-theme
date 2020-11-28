@@ -23,7 +23,7 @@ function sakura_theme_link(){
     wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery-3.2.1.min.js', array(), '1.0.0');
     wp_enqueue_script('iscroll', 'https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js', array('jquery'), '1.0.0');
     wp_enqueue_script('drawer-js', 'https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js', array('jquery','iscroll'), '1.0.0');
-    wp_enqueue_script('common', get_template_directory_uri() . '/js/common.js', array('jquery', 'iscroll','drawer'), '1.0.0');
+    wp_enqueue_script('common', get_template_directory_uri() . '/js/common.js', array('jquery', 'iscroll','drawer-js'), '1.0.0');
 
 }
 add_action('wp_enqueue_scripts', 'sakura_theme_link');
