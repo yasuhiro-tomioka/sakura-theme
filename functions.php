@@ -27,3 +27,22 @@ function sakura_theme_link(){
 
 }
 add_action('wp_enqueue_scripts', 'sakura_theme_link');
+
+
+function sakura_theme_init(){
+    register_post_type(
+        'daily',[
+            "labels" => [
+                "name" => "日報"
+            ],
+            "public" => true,
+            // アイコンの設定　https://developer.wordpress.org/resource/dashicons/#portfolio
+            'menu_icon' => 'dashicons-portfolio',
+            // 表示順の設定
+            'menu_position' => 6,
+            // 新エディターにするコード
+            'show_in_rest' => true,
+        ]);
+}
+
+add_action('init','sakura_theme_init');
