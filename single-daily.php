@@ -10,19 +10,20 @@ get_header();
 the_post();
 ?>
 
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="main-content">
+    <div class="daily">
 
-<?php the_post_thumbnail(); ?>
-<h2>これは、日報用PHPです。</h2>
-<!-- the_field('フィールド名')を入れる -->
-<p><?php the_field('day')?></p>
-<p><?php the_field('content')?></p>
-<p><?php the_field('img')?></p>
-<img src="<?php the_field('img')?>" alt="">
+    <img class="daily__img" src="<?php the_field('img')?>" alt="">
+    <h2>これは、日報用PHPです。</h2>
+    <!-- the_field('フィールド名')を入れる -->
+    <p><?php the_field('day')?></p>
+    <p><?php the_field('content')?></p>
+    <!-- <p><?php the_field('img')?></p> -->
+
+    </div>
+
+</div>
+
 
 
 
