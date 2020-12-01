@@ -48,3 +48,25 @@
 .post__text {
     line-height: 1.5em;
 }
+
+.post__img {
+    width: 360px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px gray;
+    margin: 1em;
+    padding: 1em;
+
+
+}

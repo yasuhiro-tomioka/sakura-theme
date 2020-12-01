@@ -99,6 +99,7 @@
             </div>
             <!-- <div class="blog__button"> -->
             <a href="/news" class="button blog__button" >もっとみる</a>
+            <a href="/daily" class="button blog__button">日報をみる</a>
             <!-- </div> -->
         </section>
 

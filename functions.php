@@ -56,7 +56,12 @@ function sakura_theme_init(){
             // 新エディターにするコード
             'show_in_rest' => true,
             // 参照　https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/register_post_type
+            // ARCHIVEページの取得
+            'has_archive' => true,
+            // 階層構造の取得
+            'hierarchical' => true,
         ]);
+
 }
 
 add_action('init','sakura_theme_init');
