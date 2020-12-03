@@ -8,11 +8,9 @@
                 <a href="<?php the_permalink(); ?>">
     
                     <div class="card">
-                        
                         <h2 class="card__title"><?php the_title(); ?></h2>
-                        
-                        </div>
                     </div>
+
     
                 </a>
                 <?php endwhile; ?>
